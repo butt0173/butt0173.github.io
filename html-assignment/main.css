@@ -1,35 +1,43 @@
 /* 1. Inheritance: targe body for font family and 18px font size */
 body { 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     font-size: 18px;
+    background-color: #f8e7f2; /* Light pink background color */
+    color:#212529; /* Dark text color */
     margin: 0;
     padding: 0;
 }
 
 /* 2. Select Multiple elements: header and footer with the same background color */
 header, footer {
-    background-color: #f4f4f4;
+    background-color: #f1d3e7; /* pink background color */
     padding: 1rem;
 }
 
 /* 3. Class Selector: site-title to change text color */
 .site-title {
-    color: #2c3e50;
-}
+    color: #590D22; /* Dark red text color */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing:0.5px;
+} 
 
 /* 4. Id selector: my-image with 0 horiz/vert placement. 2px blur, 1px spread, blcak color*/
 #my-image {
     box-shadow: 0px 0px 2px 1px black;
+    border-radius: 8px;
 }
 
 /* 5. Replace list bullets with squares */
 .hobby-list {
     list-style-type: square;
+    padding-left: 1.5rem;
 } 
 
 /* 6. nth-child selector: background on odd list items in hobby list */
 .hobby-list li:nth-child(odd) {
-    background-color: #e9ecef;
+    background-color: #fff0f3; /* Light pink background for odd items */
 }
 
 /* 7. Styling the Navigation */
@@ -37,17 +45,25 @@ header, footer {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 1rem;
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 /* Remove underline, add, background and border to nav links */
 nav a {
     text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    padding: 8px 16px;
-    color: #333333;
+    background-color: #ffccd5; /* Light pink background for nav links */
+    border: 2px solid #590d22; /* Raspberry Accent */
+    color: #590d22; /* Raspberry Accent */
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 20px;
     display: inline-block;
-    ]
+    transition: background-color 0.2s ease;
+}
 
+/* Change background color on hover*/
+nav a:hover {
+    background-color: #ff8fa3; /* Medium Coral Pink */
+}
