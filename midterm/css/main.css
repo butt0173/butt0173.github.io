@@ -29,3 +29,27 @@ body {
     clear: both;
 }
 
+/* 4. Header & Hero Image Banner */
+.site-header {
+    margin-bottom: 20px;
+}
+
+.site-title {
+    font-size: 2rem;
+    color: #8c4158; /* Deep rose pink */
+    margin-bottom: 15px;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
