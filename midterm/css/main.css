@@ -1,0 +1,31 @@
+/* 1. Global Box Sizing Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Body and Page Background */
+body {
+    background-color: #fcf4f6; /* Soft, warm blush cream */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5c514e;
+    line-height: 1.6;
+}
+
+/* 3. Main Wrapper Container */
+.wrapper {
+    width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff; 
+    padding: 30px;
+    border: 1px solid #ebd3da;
+}
+
+/* Clearfix Helper for Floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
