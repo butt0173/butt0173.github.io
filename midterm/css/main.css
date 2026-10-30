@@ -53,3 +53,19 @@ body {
     object-fit: cover;
     display: block;
 } 
+
+/* Overlay Text Box on Banner Image */
+.hero-overlay {
+  position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 12px 20px;
+    border-left: 4px solid #f48fb1; /* Vibrant pastel pink accent bar */
+}
+
+.hero-overlay h2 {
+    font-size: 1.2rem;
+    color: #8c4158;
+}
+
