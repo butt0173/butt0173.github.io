@@ -7,18 +7,18 @@
 
 /* 2. Body and Page Background */
 body {
-    background-color: #fcf4f6; /* Soft, warm blush cream */
+    background-color: #fcf4f6;
     font-family: Arial, Helvetica, sans-serif;
     color: #5c514e;
     line-height: 1.6;
 }
 
-/* 3. Main Wrapper Container */
+/* 3. Main Wrapper Container (Framed Card with side margins) */
 .wrapper {
-    width: 900px;
+    width: 850px;
     margin: 30px auto;
-    background-color: #ffffff; 
-    padding: 30px;
+    background-color: #ffffff;
+    padding: 25px;
     border: 1px solid #ebd3da;
 }
 
@@ -31,41 +31,158 @@ body {
 
 /* 4. Header & Hero Image Banner */
 .site-header {
-    margin-bottom: 20px;
-}
-
-.site-title {
-    font-size: 2rem;
-    color: #8c4158; /* Deep rose pink */
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 250px;
-    overflow: hidden;
 }
 
 .hero-banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
-} 
+}
 
-/* Overlay Text Box on Banner Image */
+/* Title Positioned Centered Over the Bottom of the Banner */
 .hero-overlay {
-  position: absolute;
+    position: absolute;
     bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.90);
-    padding: 12px 20px;
-    border-left: 4px solid #f48fb1; /* Vibrant pastel pink accent bar */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .hero-overlay h2 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* 5. Navigation Bar (Spread evenly like the mockup) */
+.main-nav {
+    border-top: 1px solid #ebd3da;
+    border-bottom: 1px solid #ebd3da;
+    padding: 15px 0;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5c514e;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
     color: #8c4158;
 }
 
+/* 6. Main Content Layout */
+.main-article {
+    margin-bottom: 30px;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Article Image Floated Left with Text Wrapping */
+.floated-img {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.main-article p {
+    margin-bottom: 15px;
+    color: #5c514e;
+}
+
+/* 7. Facts Section */
+.facts-section {
+    margin-bottom: 30px;
+}
+
+.facts-section h3 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.facts-section ul {
+    margin-left: 20px;
+}
+
+.facts-section li {
+    margin-bottom: 8px;
+    color: #5c514e;
+}
+
+/* 8. Contact / Form Section */
+.contact-section {
+    border-top: 1px solid #ebd3da;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-section h3 {
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c514e;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ebd3da;
+    background-color: #faf6f7;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #5c514e;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+/* 9. Footer */
+.site-footer {
+    text-align: right;
+    border-top: 1px solid #ebd3da;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #8c6d75;
+}
